@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" extends="task" label="Incident" max_length="40" name="incident" sizeclass="83" text_index="true" type="collection">
+        <element choice="1" label="Set onhold" max_length="100" name="x_58872_needit_set_onhold" type="glide_date_time">
+            <choice/>
+        </element>
+        <element choice="1" label="Substate" max_length="100" name="x_58872_needit_substate" type="choice">
+            <choice/>
+        </element>
+    </element>
+</database>

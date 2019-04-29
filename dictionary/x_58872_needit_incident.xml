@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Incident" max_length="40" name="x_58872_needit_incident" sizeclass="1" type="collection">
+    <element extends="task" label="Incident" max_length="40" name="x_58872_needit_incident" sizeclass="5" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Set onhold" max_length="40" name="u_set_onhold_at" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Set onhold" max_length="40" name="u_set_on_hold" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Substate onhold" max_length="40" name="u_substate" type="string">
