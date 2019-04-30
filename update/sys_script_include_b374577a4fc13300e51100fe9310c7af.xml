@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.IncidentOnholdDateUtil</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>IncidentOnholdDateUtil</name>
+        <script><![CDATA[var IncidentOnholdDateUtil = {
+	allowTimeframe: function(maxNoDays, current){
+		//only compare date
+		var actualDate = new GlideDate();
+		var maxOnholdDate =  new GlideDate();
+		var actualOnHoldDateTime = new GlideDateTime(current.x_58872_needit_set_onhold_at);
+		var actualOnHoldDate = actualOnHoldDateTime.getLocalDate();
+		
+		//add days to local time
+		maxOnholdDate.addDaysLocalTime(maxNoDays);
+		
+		if(current.state == 3 && actualOnHoldDate.after(maxOnholdDate) ){
+			//Write back to db
+			actualOnHoldDateTime.setValue(maxOnholdDate + ' 12:00:00');
+			
+			//datum auf maxOnhold setzen - Datetime?
+			var tf_setOnhold = 'x_58872_needit_set_onhold_at';
+			
+			current.setValue(tf_setOnhold, actualOnHoldDateTime);
+			
+			
+		}
+	}
+	
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-30 12:23:18</sys_created_on>
+        <sys_id>b374577a4fc13300e51100fe9310c7af</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>IncidentOnholdDateUtil</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_b374577a4fc13300e51100fe9310c7af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-30 14:25:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

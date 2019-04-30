@@ -4,8 +4,11 @@
         <element label="Set substate on hold at" max_length="100" name="x_58872_needit_set_substate_on_hold_at" type="glide_date_time"/>
         <element choice="1" label="Substate on hold" max_length="100" name="x_58872_needit_substate_onhold" type="choice">
             <choice>
+                <element inactive="true" inactive_on_update="true" label="Kunde nicht anwesend" sequence="0" value="customer not available"/>
                 <element inactive_on_update="false" label="Kunde nicht anwesend" sequence="0" value="customer not available"/>
+                <element inactive="true" inactive_on_update="true" label="Warten Info Kunde" sequence="1" value="waiting Info Customer"/>
                 <element inactive_on_update="false" label="Warten Info Kunde" sequence="1" value="waiting Info Customer"/>
+                <element inactive="true" inactive_on_update="true" label="Terminänderung auf Kundenwunsch" sequence="2" value="date change on customer request"/>
                 <element inactive_on_update="false" label="Terminänderung auf Kundenwunsch" sequence="2" value="date change on customer request"/>
             </choice>
         </element>

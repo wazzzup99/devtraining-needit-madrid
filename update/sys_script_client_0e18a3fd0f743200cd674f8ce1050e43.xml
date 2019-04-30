@@ -4,7 +4,7 @@
         <applies_extended>false</applies_extended>
         <condition/>
         <description/>
-        <field>state</field>
+        <field>hold_reason</field>
         <global>true</global>
         <isolate_script>false</isolate_script>
         <messages/>
@@ -14,9 +14,11 @@
    if (isLoading || newValue === '') {
       return;
    }
-	if(newValue == 3){
+	if(newValue == 1){
 		g_form.setDisplay("x_58872_needit_substate_onhold", true);
-		g_form.setMandatory("x_58872_needit_set_on_hold_at", true);
+		
+	}else if (newValue != 1){
+		g_form.setDisplay("x_58872_needit_substate_onhold", false);
 	}
 }
 
@@ -29,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0e18a3fd0f743200cd674f8ce1050e43</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Display Incident Onhold Substate Options</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -37,7 +39,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_client_0e18a3fd0f743200cd674f8ce1050e43</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-04-30 08:36:50</sys_updated_on>
+        <sys_updated_on>2019-04-30 08:57:30</sys_updated_on>
         <table>incident</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
