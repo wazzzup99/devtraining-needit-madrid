@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>autoclose_incedents_awaiting_caller</internal_name>
+        <label_cache>[{"name":"699bed25-af24-44a3-86e8-b94c45ddf86b.table_name","label":"2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"699bed25-af24-44a3-86e8-b94c45ddf86b.record","label":"2.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"08222d92-0a14-42cf-976c-91a8ac2d38ec.item","label":"2➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference"},{"name":"65516b98-3d0a-42dc-89dc-7fb3db22b940.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer"},{"name":"65516b98-3d0a-42dc-89dc-7fb3db22b940.Table","label":"1➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name"},{"name":"65516b98-3d0a-42dc-89dc-7fb3db22b940.Records","label":"1➛Incident Records","reference":"incident","reference_display":"Incident","type":"records","base_type":"records"}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Autoclose Incidents Awaiting Caller</name>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-07 07:56:16</sys_created_on>
+        <sys_id>56da56054f113300e51100fe9310c7b7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Autoclose Incidents Awaiting Caller</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_56da56054f113300e51100fe9310c7b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-07 08:14:59</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=56da56054f113300e51100fe9310c7b7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=56da56054f113300e51100fe9310c7b7"/>
+</record_update>
