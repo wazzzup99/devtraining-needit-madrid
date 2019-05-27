@@ -36,7 +36,8 @@
 		if(dateFromScriptInclude != newValue){
 			g_form.clearValue('x_58872_needit_set_onhold_until');
 			g_form.setValue('x_58872_needit_set_onhold_until', dateFromScriptInclude);
-			g_form.addInfoMessage('The maximum duration for this onhold reason was exceeded and the value changed to the maximum date/time.');
+			
+			g_form.showFieldMsg('x_58872_needit_set_onhold_until', 'Maximum date for onhold reason exceeded', 'info');
 		}
 	}
 }]]></script>
@@ -46,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8a5235eb4fc13300e51100fe9310c778</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>incidentOnholdDateLimit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -54,7 +55,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_client_8a5235eb4fc13300e51100fe9310c778</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-14 07:57:34</sys_updated_on>
+        <sys_updated_on>2019-05-16 12:47:35</sys_updated_on>
         <table>incident</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

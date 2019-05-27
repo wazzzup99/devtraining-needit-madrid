@@ -8,7 +8,7 @@
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>Incident Check MaxDate OnHold Reason</name>
+        <name>Check Date Onhold Reason</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 	if (isLoading || newValue == '') {
@@ -42,11 +42,9 @@
 			//g_form.addInfoMessage(dateFromScriptInclude + ' vs ' + onHoldDate);
 			
 			//TODO: add annotation/info field to inform user
-			if(!dateFromScriptInclude.equals(onHoldDate)){
-				//g_form.addInfoMessage('The maximum duration for this onhold reason was exceeded and the value changed to the maximum date/time.');
-				//g_form.addInfoMessage('Oh no, you exceeded the maximum hold time but don\'t worry we took care and corredcted it.');
-				g_form.addInfoMessage(dateFromScriptInclude + ' vs ' + onHoldDate);
-			}
+				//g_form.showFieldMsg('x_58872_needit_set_onhold_until', dateFromScriptInclude + ' vs ' + onHoldDate, 'info');
+			g_form.showFieldMsg('x_58872_needit_set_onhold_until', 'Maximum date for onhold reason exceeded', 'info');
+			
 			
 		}
 	}
@@ -57,15 +55,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>06406ab24f413300e51100fe9310c7b8</sys_id>
-        <sys_mod_count>34</sys_mod_count>
-        <sys_name>Incident Check MaxDate OnHold Reason</sys_name>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name>Check Date Onhold Reason</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_client_06406ab24f413300e51100fe9310c7b8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-14 09:12:10</sys_updated_on>
+        <sys_updated_on>2019-05-16 12:41:38</sys_updated_on>
         <table>incident</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
