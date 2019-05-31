@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" extends="task" label="Incident" max_length="40" name="incident" sizeclass="96" text_index="true" type="collection">
+        <element choice="1" dependent="hold_reason" dependent_on_field="hold_reason" label="Substate on hold" max_length="100" name="x_58872_needit_substate_onhold" type="choice" use_dependent_field="true">
+            <choice/>
+        </element>
+    </element>
+</database>
